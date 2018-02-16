@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="VoiceRecorder"/>
+
+    <title>VoiceRecorder</title>
+
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.css"/>
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+
+<body>
+    <div class="ui-page ui-page-active" id="main">
+        <div class="main-content"></div>
+        <div id="main-navigation-bar" class="navigation-bar">
+            <div id="main-navigation-bar-button" class="button-large">
+                <div id="main-navigation-bar-button-icon" class="button-large-icon"></div>
+                <div id="main-navigation-bar-button-map" class="button-large-map"></div>
+            </div>
+        </div>
+        <div id="record-progress" class="progress">
+            <div id="record-progress-val" class="progress-val"></div>
+        </div>
+        <div id="exit-alert" class="ui-popup">
+            <div class="ui-popup-content" id="exit-alert-message"></div>
+            <div class="ui-popup-footer">
+                <button class="ui-btn" id="exit-alert-ok">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="ui-page" id="preview">
+        <div class="preview-content">
+            <audio id="audio"></audio>
+        </div>
+        <div id="preview-navigation-bar" class="navigation-bar">
+            <div id="preview-navigation-bar-button" class="button-large">
+                <div id="preview-navigation-bar-button-icon" class="button-large-icon paused"></div>
+                <div id="preview-navigation-bar-button-map" class="button-large-map"></div>
+            </div>
+        </div>
+        <div id="voice-animation-frame">
+            <img id="voice-animation" class="voice-animation paused"></img>
+        </div>
+        <div id="preview-progress" class="progress">
+            <div id="preview-progress-val" class="progress-val"></div>
+        </div>
+    </div>
+    <script src="./js/tau-config.js"></script>
+    <script src="./lib/tau/wearable/js/tau.js"></script>
+    <script src="./js/core/core.js" data-main="./js/app.js"></script>
+</body>
+</html>

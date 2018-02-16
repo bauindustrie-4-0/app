@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/VoiceRecorder" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="Z6uuc2TIFd.VoiceRecorder" package="Z6uuc2TIFd" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>VoiceRecorder</name>
+    <tizen:privilege name="http://tizen.org/privilege/mediacapture"/>
+    <tizen:privilege name="http://tizen.org/privilege/camera"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="enable"/>
+</widget>
